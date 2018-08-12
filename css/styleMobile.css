@@ -1,0 +1,67 @@
+#Tablet, #Desktop {
+
+    display: none;
+}
+
+body, html {
+    height: 100%;
+}
+body{
+    opacity: 0;
+}
+
+#Mobile{
+    min-height: 100%; 
+    max-width: 100%;   
+    background-color: lightskyblue;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+ }
+img{
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 50%;
+}
+
+ button.accordion {
+     margin-top: 1px;
+     margin-bottom: 1px;
+     background-color: #eee;
+     color: #444;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;     
+     text-align: left;
+     outline: none;
+     font-size: 20px;
+     border: 0px solid rgba(100, 100, 100, 0.8);
+     transition: 0.4s;
+     display: block;
+ }
+ 
+ button.accordion:hover {
+     background-color: #ccc;   
+ }
+ 
+ div.panel {
+     padding: 0 18px;
+     max-height: 0px;
+     overflow: hidden;
+     background-color: rgba(255, 192, 203, 0.7);
+     transition: max-height .4s ease-out;
+ }
+
+ button.Active{
+     border: 25px solid rgba(100, 100, 100, 0.8);
+ }
+
+ .center {
+    margin: auto;
+    max-width: 95%;   
+}

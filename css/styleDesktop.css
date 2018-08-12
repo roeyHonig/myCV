@@ -1,0 +1,363 @@
+#Tablet, #Mobile{
+    
+        display: none;
+    }
+    #Desktop {
+        visibility: hidden;
+    }
+
+.container {
+      
+    height: 100%;
+    max-width: 90%;
+    position: relative;
+    font-size: 16px;
+    margin: 0px auto;
+    border: 0px solid red;
+    display: flex;
+    align-items: center;
+    min-height: 700px;
+
+
+
+}
+
+body , html{
+    height: 100%;
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    opacity: 0;
+}
+
+.toggelOpacity{
+    opacity:.4 ;
+    transition: opacity 0.5s;
+}
+
+.toggelOpacity:hover {
+    opacity:1 ;
+}
+
+.active {
+    opacity:1 ;
+    
+}
+
+
+
+#canvasOut {
+
+    position: absolute;
+    top:0px;
+    left: 0px;
+    
+    
+}
+
+img {
+border-radius: 50%;
+width: 15%;
+position: absolute;
+top:50%;
+right:42.5%;
+
+
+
+}
+
+#name {
+    border: 0px solid rgb(8, 4, 4);
+    text-align: left;
+    display: inline-block;
+    width: 15%;
+    height: 10%;
+    padding: 0px;
+    position: absolute;
+    top:0%;
+    left:0%;   
+}
+
+#homeAdress {
+    border: 0px solid rgb(8, 4, 4);
+    width: 25%;
+    height:15%;
+    position: absolute;
+    top:0%;
+    right:30%;
+}
+
+#homeAdress i{
+    color: red;
+    width: 20%;
+    height:100%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+#homeAdress div{
+    height: 100%; 
+    display: inline-block; 
+    width: 70%; 
+}
+
+#personalProfile {
+    border: 0px solid rgb(8, 4, 4);
+    width: 25%;
+    height:15%;
+    position: absolute;
+    top:0%;
+    right:0%;
+}
+
+#personalProfile h1{
+    margin:0%;
+    color: red;
+}
+#personalProfile i{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    color: red;
+    
+    
+}
+#personalProfile ul{
+    margin-left:10%;
+    padding: 0%;
+    display: inline-block;
+    width: 60%;
+}
+
+
+#education {
+    border: 0px solid rgb(8, 4, 4);
+    text-align: left;
+    display: inline-block;
+    width: 39%;
+    height: 40%;
+    padding: 0px 0px;
+    position: absolute;
+    top:20%;
+    right:0%;
+}
+
+#contactInfo {
+    border: 0px solid rgb(8, 4, 4);
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    font-size: 6em;
+    padding: 0px 0px;
+    position: absolute;
+    bottom:10%;
+    right:0%;
+}
+
+
+
+
+#educationIcon {
+    font-size: inherit;
+    color : rgb(224, 213, 55);
+    
+    
+}
+
+
+#education h1{
+    font-size: 64px;
+    color : rgb(224, 213, 55);
+    height: 20%;
+    text-align: left;
+}
+#education ul{
+    
+    font-size: .3em;
+    color :  rgb(224, 213, 55);
+    
+    
+}
+
+#contactInfo h1{
+    font-size: .4em;
+    color : rgb(247, 26, 26);
+    
+}
+#contactInfo ul{
+    
+    font-size: .25em;
+    color :  rgb(247, 26, 26);
+    
+    
+}
+
+#contactInfoList li{
+    
+    display: inline-block;
+    margin-left:10% ;
+    margin-right:10% ;
+    
+}
+
+
+ul {
+    list-style-type:square;
+    
+}
+
+
+
+
+
+i.fa-whatsapp {
+
+    font-size: 1.8em;
+    
+}
+
+i.fa-envelope {
+    
+        font-size: 1.8em;
+        
+}
+
+
+i.fa-globe {
+    
+        font-size: 1.8em;
+        
+}
+
+#contactInfoList {
+    padding: 0;
+
+}
+
+
+
+#skills {
+    width: 40%;
+    height: 25%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    border: 0px solid black;
+}
+
+#skillsContent {
+    margin-left: 10%;
+    height: 100%;
+    border: 0px solid magenta;
+    position: relative;
+}
+
+#skillsContent header {
+    height: 30%;
+    border: 0px solid yellow;
+    font-size: 40px;
+    color: #9323ED;
+}
+
+.specificSkill {
+    height: 10%;
+    font-size: 10px;
+    margin-top: 10%
+}
+
+#skills i {
+    color: #9323ED;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 10%;
+    height: 30%;
+    border: 0px solid blue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.progress {
+    height: 4%;
+    margin-bottom: 1%;
+}
+
+.progress-bar {
+    background-color: #9323ED;
+}
+
+#workExperience {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    bottom: 26%;
+    left: 10px;
+    border: 0px solid black;
+}
+
+#workExperience div {
+    border: 0px solid yellow;
+}
+
+#workExperience header {
+    margin-left: 10%;
+    font-size: 50px;
+    color: orange;
+}
+
+
+#workExperience i {
+    width: 10%;
+    font-size: 60px;
+    color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.autoResizeText{
+    font-size: 60px;
+}
+
+.autoResizeTextForPargraps{
+    font-size: 20px;
+    
+}
+
+#hobbies {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 0%;
+    left: 55%;
+    border: 0px solid black;
+}
+
+#hobbies header{
+    height: 30%;
+    border: 0px solid black;
+    color: rgb(17, 223, 61);
+}
+
+#hobbies div{
+    height: 20%;
+    border: 0px solid black;
+    color: rgb(17, 223, 61);
+}
+
+#hobbies p{
+    height: 48%;
+    border: 0px solid black;
+}
+
+#hobbies i{
+    margin:0;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    color: rgb(17, 223, 61);
+    display: inline-block;
+}

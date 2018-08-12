@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Roey_Honig_Curriculum_Vitae</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="js/MobileApp.js"></script>
+        <script src="js/TabletApp.js"></script>        
+        <script src="js/DesktopApp.js"></script>
+
+        <link media="screen and (min-width: 1010px) and (orientation: portrait )" href="css/styleTablet.css" rel="stylesheet" >            
+        <link media="screen and (min-width: 1010px) and (orientation: landscape)" href="css/styleDesktop.css" rel="stylesheet" >
+        <link media="screen and (min-width: 700px) and (max-width: 1009px)" href="css/styleTablet.css" rel="stylesheet" >    
+        <link media="screen and  (max-width: 699px)" href="css/styleMobile.css" rel="stylesheet" >
+    </head>
+    <body onload="cheackWidth(), adjustDivHeightWithRespectToTextSize('adjustableHeightDiv')" onresize="cheackWidth()" data-spy="scroll" data-target="#tabletNavbar" data-offset="69">
+
+        <div id="Desktop" class="container">
+                    <div id="canvasOut">
+                        <canvas id="can"></canvas>
+                        <!-- will be set by Desktop.js scripit -->
+                        
+                    </div>
+                    <img id="roeyPhoto" src="images/roey.jpg" alt="roey honig photo id">
+                    <div id="name" class="autoResizeText">Roey Honig</div>
+                     
+                    <div id="homeAdress" class="toggelOpacity" onclick='toggelActiveClass("homeAdress")'>
+                            <i id="homeIcon" class="material-icons autoResizeText">home</i>
+                            <div class="autoResizeText ">
+                                Neva Yeoshua 28,<br>
+                                Ramat-Gan, Israel
+                            </div>
+                    </div>
+                                       
+                    <div id="personalProfile" class="toggelOpacity" onclick='toggelActiveClass("personalProfile")'>
+                                    <h1 class="autoResizeText" style="height:30%;" >PERSONAL PROFILE</h1>
+                                    <i id="personalProfileIcon" class="material-icons autoResizeText" style="height:70%;">person</i>
+                                    <ul id="personalProfileList" style="height:70%;">
+                                        <li style="height:25%;" class="autoResizeTextForPargraps"><span style="color:black;"><strong><u> Date of Birth:</u></strong>  August 2nd 1982</span> </li>
+                                        <li style="height:25%;" class="autoResizeTextForPargraps "><span style="color:black;"><strong><u> Citizenship:</u></strong>  Israeli</span> </li>
+                                        <li style="height:25%;" class="autoResizeTextForPargraps"><span style="color:black;"><strong><u> Gender:</u></strong>  Male</span> </li>
+                                        <li style="height:25%;" class="autoResizeTextForPargraps"><span style="color:black;"><strong><u> Marital Status:</u></strong> Married</span> </li>
+                                        
+                                    </ul>
+                                               
+                    </div>
+                     <div id="education" class="toggelOpacity" onclick='toggelActiveClass("education")'>
+                                    <h1 id="educationH1Id" class="autoResizeText" style="height:20%;"><i id="educationIcon" class="material-icons">school</i>EDUCATION</h1>
+                                    <p id="educationList" class="autoResizeTextForPargraps" style="height:75%;">
+                                        <span style="color:black;"><strong><u> Full High School Diploma:</u></strong><span style="color:rgb(224, 213, 55);"> 1997-2000</span></span> <br><br>
+                                        <span style="color:black;"><strong><u> Bachelor’s Degree, Mechanical Engineering, Tel-Aviv University:</u></strong><span style="color:rgb(224, 213, 55);"> 2000-2005</span> Departments of “Solid Mechanics” & “Heat and Mass Flow”. Final Project: The Design and manufacture of a Rotor Disk Unmanned Aerial Vehicle </span><br> <br>
+                                        <span style="color:black;"><strong><u> Master’s Degree, Mechanical Engineering, Tel-Aviv University:</u></strong> <span style="color:rgb(224, 213, 55);"> 2010-2013</span> </span><br><br>
+                                        <span style="color:black;"><strong><u> HackerU College:</u></strong><span style="color:rgb(224, 213, 55);"> 2017-2018</span> Applications for Web, Android & IOs using HTML, CSS, JavaScript, Java & Swift languages</span> <br><br>
+                                    </p>
+                                    
+                                
+
+                                
+                    </div>
+                    <div id="contactInfo" class="toggelOpacity" onclick='toggelActiveClass("contactInfo")'>
+                        <h1 id="contactInfoHeader">CONTACT INFO</h1>
+                        <ul id="contactInfoList">
+                            <li><i class="fa fa-whatsapp"></i><span style="color:black;">&nbsp 053-2702445</span> </li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><span style="color:black;">&nbsp roeyhonig94@gmail.com</span> </li>
+                            <li><i class="fa fa-globe" aria-hidden="true"></i><span style="color:black;">&nbsp www.roeyhonig.com</span> </li>
+                            
+                        </ul>
+                        
+                    
+
+                    
+                   </div>
+
+                   <div id="workExperience" class="toggelOpacity" onclick='toggelActiveClass("workExperience")'>
+                    <i class="material-icons autoResizeText">settings</i>
+                    <header id="workheader"  class="autoResizeText" style="height: 20%; ">
+                        Work Experience
+                    </header>
+                    
+                        <div class="autoResizeTextForPargraps" style="height: 35%">
+                            <strong> <u>2005-2008:</u> </strong>  Israeli Air Force Officer - Lieutenant <br>
+                            Projects Manager, Construction Unit, Ramat David Air Base. Responsibilities include budget and technical managing core utilities projects in the fields of Air Conditioning, Jet Fuel supply and the Base Utility & Power grid.<br><br>
+
+                            <strong> <u>2008-2011:</u> </strong>  Israeli Air Force Officer - Captain <br>
+                            Engine Officer, Propulsion Branch, IAF HQ. Responsibilities include the PT6-41\42\68 Jet Engines and the IO-550B Piston Engine. Job includes the mechanical design of new projects, publishing & surveying Engine Maintenance Procedures and drafting new contracts between the IAF and OEM (Original Equipment Manufacturer) world wide.<br><br>
+                            
+                    </div>
+                    <div  style="height: 10%">
+                    </div>
+                    <div  class="autoResizeTextForPargraps" style="height: 35%">
+                            <strong> <u>2011-2012</u> </strong>  YAHAV HAMIAS GROUP – CO2 Welder <br>
+                            Welding and joining heavy machinery parts using Arc, CO2 & Tungsten welding machines. Performing all welding connections such as a T-junction, Butt weld and piping systems made of different metals such as stainless steel and aluminum.<br><br>
+
+                            <strong> <u>2012-2017:</u> </strong>  TenZor – Mechanical Engineer <br>
+                            As part of my job, I performed numerous Computer Aided Simulations in a vast array of physical disciplines– such as structural dynamics & statics, electromagnetics, heat & mass flow – design to allow the customers better manufacture consumer goods or military application products. My company served as a reseller of ANSYS software, which allows Mechanical Engineers to utilize the Finite Element Numerical Approach for real life engineering problems.<br><br>
+                    </div> 
+                    
+
+        
+                </div>
+        
+                <div id="skills" class="toggelOpacity" onclick='toggelActiveClass("skills")'>
+                    <div id="skillsContent">
+                        <header class="autoResizeText">Skills, Software & Languages</header>
+        
+                        <div style="height: 70%; width: 40% ;">
+                            <div class="specificSkill autoResizeText ">HTML, CSS, JavaScripit, Bootstrap, Jquery</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="specificSkill autoResizeText ">Microsoft Office, C++, Matlab, SolidWorks, ANSYS</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="specificSkill autoResizeText ">SMAW Welder</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+        
+                        <div style="height: 70%; width: 40%; position: absolute; left: 50%; top:30%;">
+                            <div class="specificSkill autoResizeText ">Hebrew – Native Language</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="specificSkill autoResizeText ">English – Excellent Reading\Writing\Speaking</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        </div>
+        
+                    </div>
+                    <i class="material-icons autoResizeText">build</i>
+        
+                </div>
+
+                <div id="hobbies" class="toggelOpacity" onclick='toggelActiveClass("hobbies")'>
+                    <header class="autoResizeText" >
+                        HOBBIES
+                    </header>
+                    <div >
+                            <i class="material-icons autoResizeText">music_video</i>
+                            <i class="material-icons autoResizeText">videocam</i>
+                            <i class="material-icons autoResizeText">gamepad</i>
+                    </div>
+                    <p class="autoResizeTextForPargraps">
+                            I enjoy listening to rock music, reading Sci-Fi books and playing the drums. In Addition I am an Amateur carpenter just like our lord and saver Jesus Christ was.
+                    </p>
+                    
+                </div>
+
+
+
+                    
+
+                    
+                    
+                    
+                    
+                    
+        </div>
+
+        <div id="Tablet">
+               <div class="container-fluid" style="background-color:#F44336;color:#fff;">
+                    <h1>Hi, I'm Roey Honig</h1>
+                    <p>
+                            Born in Israel, August 2nd 1982 and have lived here all my life. 
+                            I am the 1st born of 3 siblings and recently married to my amazing wife Rotem with whom, I’m currently residing at Neva-Yeoshua 28 St, Ramat-Gan.<br>
+                            My love of Natural Physics and Mathematics led me to a degree in Mechanical Engineering and a career both in the IDF & the free market. <br><br>
+                            I’ve always had a soft spot for Computer Science and decided to change course and pursue a career in Computer Programming languages.<br>
+                            I am looking for work in the field of Web \ Mobile App Development utilizing the following programing Languages \ Tools:
+                            HTML5, CSS, JavaScript, PHP, MySQL, Access, xml, Java, Swift.<br><br>
+                            
+                            <u>My contact details are as follows:</u> 
+                            
+                    </p>
+                    <div class="container">
+                            <p style="float:left;">
+                                    <i class="fa fa-whatsapp"></i><span >&nbsp 053-2702445</span> <br>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span >&nbsp roeyhonig94@gmail.com</span> <br>
+                                    <i class="fa fa-globe" aria-hidden="true"></i><span >&nbsp www.roeyhonig.com</span> <br>
+                            </p>
+                            <img id="roeyPhoto" src="images/roey.jpg" alt="roey honig photo id">
+                            
+                    </div>
+            </div>
+            
+            <nav id="tabletNavbar" class="navbar sticky-top navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">RH</a>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#fat" onclick="fixNavHeightOnClick()"><i id="educationIcon" class="material-icons" >school</i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#mdo" onclick="fixNavHeightOnClick()"><i class="material-icons">build</i></a>
+                      </li>
+                      <li  class="nav-item">
+                            <a class="nav-link" href="#one" onclick="fixNavHeightOnClick()"><i id="rotate" class="material-icons">settings</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#two" onclick="fixNavHeightOnClick()"><i class="material-icons">gamepad</i></a>
+                        </li>
+                        
+                     
+                    </ul>
+            </nav>
+
+            <div id="fatBufferDiv" class="adjustableHeightDiv"></div>     
+            <div id="fat" class="adjustableHeightDiv">
+                <h1 >EDUCATION</h1>
+                <p>
+                        <span ><strong><u> Full High School Diploma:</u></strong><span > 1997-2000</span></span> <br><br>
+                        <span ><strong><u> Bachelor’s Degree, Mechanical Engineering, Tel-Aviv University:</u></strong><span > 2000-2005</span> Departments of “Solid Mechanics” & “Heat and Mass Flow”. Final Project: The Design and manufacture of a Rotor Disk Unmanned Aerial Vehicle </span><br> <br>
+                        <span ><strong><u> Master’s Degree, Mechanical Engineering, Tel-Aviv University:</u></strong> <span > 2010-2013</span> </span><br><br>
+                        <span ><strong><u> HackerU College:</u></strong><span > 2017-2018</span> Applications for Web, Android & IOs using HTML, CSS, JavaScript, Java & Swift languages</span> <br><br>
+                </p>
+            </div>
+
+            <div id="mdoBufferDiv" class="adjustableHeightDiv"></div>                 
+            <div id="mdo" class="adjustableHeightDiv">
+                <h1 >Professional Skills, Languages & Qualifications</h1>
+                <p>
+                        <strong> <u>Certifications and Accreditations:</u> </strong>  SMAW Welder  <br><br>
+                        <strong> <u>Computer Skills:</u> </strong> Microsoft Office, C++, Matlab, SolidWorks, AutoCad, ANSYS <br><br>
+                        <strong> <u>Languages:</u> </strong> Hebrew – Native Language. English – Excellent Reading\writing\speaking level
+                </p>
+            </div>
+
+            <div id="oneBufferDiv" class="adjustableHeightDiv"></div>                 
+            <div id="one" class="adjustableHeightDiv">
+                <h1 >Work Experience</h1>
+                <p>
+                        <strong> <u>Israeli Air Force Officer - Lieutenant:</u> </strong>  2005-2008 <br>
+                        Projects Manager, Construction Unit, Ramat David Air Base. Responsibilities include budget and technical managing core utilities projects in the fields of Air Conditioning, Jet Fuel supply and the Base Utility & Power grid. <br> <br>
+                        <strong> <u>Israeli Air Force Officer - Captain:</u> </strong>  2008-2011 <br>
+                        Engine Officer, Propulsion Branch, IAF HQ. Responsibilities include the PT6-41\42\68 Jet Engines and the IO-550B Piston Engine. Job includes the mechanical design of new projects, publishing & surveying Engine Maintenance Procedures and drafting new contracts between the IAF and OEM (Original Equipment Manufacturer) world wide.<br><br>
+                        <strong> <u>YAHAV HAMIAS GROUP – CO2 Welder:</u> </strong>  2011-2012 <br>
+                        Welding and joining heavy machinery parts using Arc, CO2 & Tungsten welding machines. Performing all welding connections such as a T-junction, Butt weld and piping systems made of different metals such as stainless steel and aluminum.<br><br>
+                        <strong> <u>TenZor – Mechanical Engineer:</u> </strong>  2012-2017 <br>
+                        As part of my job, I performed numerous Computer Aided Simulations in a vast array of physical disciplines– such as structural dynamics & statics, electromagnetics, heat & mass flow – design to allow the customers better manufacture consumer goods or military application products. My company served as a reseller of ANSYS software, which allows Mechanical Engineers to utilize the Finite Element Numerical Approach for real life engineering problems. <br>
+                </p>
+            </div>
+
+            <div id="twoBufferDiv" class="adjustableHeightDiv"></div>                 
+            <div id="two" class="adjustableHeightDiv">
+                <h1 >HOBBIES</h1>
+                <p>
+                        I enjoy listening to rock music, reading Sci-Fi books and playing the drums. In Addition I am an Amateur carpenter just like our lord and saver Jesus Christ was.
+
+                </p>
+            </div>
+            
+        </div>
+
+        <div id="Mobile" class="container">
+                     <header class="center">Roey Honig CV</header>
+                     <img id="roeyPhoto" src="images/roey.jpg" alt="roey honig photo id">
+                     
+                
+                    <button id="buton0" class="accordion center" onclick="mtFunction(0)">Personal Profile</button>
+                    <div class="panel center">
+                        <p>
+                            <ul >
+                                <li ><strong><u> Date of Birth:</u></strong>  August 2nd 1982</li>
+                                <li ><strong><u> Citizenship:</u></strong>  Israeli </li>
+                                <li ><span ><strong><u> Gender:</u></strong>  Male</li>
+                                <li ><span ><strong><u> Marital Status:</u></strong> Married</li>
+                                
+                            </ul>
+                        </p>
+                    </div>
+                
+                    <button id="buton1" class="accordion center" onclick="mtFunction(1)">Education</button>
+                    <div class="panel center">
+                        <p>
+                            <span ><strong><u> Full High School Diploma:</u></strong><span style="color:rgb(224, 213, 55);"> 1997-2000</span></span> <br><br>
+                            <span ><strong><u> Bachelor’s Degree, Mechanical Engineering, Tel-Aviv University:</u></strong><span style="color:rgb(224, 213, 55);"> 2000-2005</span> Departments of “Solid Mechanics” & “Heat and Mass Flow”. Final Project: The Design and manufacture of a Rotor Disk Unmanned Aerial Vehicle </span><br> <br>
+                            <span ><strong><u> Master’s Degree, Mechanical Engineering, Tel-Aviv University:</u></strong> <span style="color:rgb(224, 213, 55);"> 2010-2013</span> </span><br><br>
+                            <span ><strong><u> HackerU College:</u></strong><span style="color:rgb(224, 213, 55);"> 2017-2018</span> Applications for Web, Android & IOs using HTML, CSS, JavaScript, Java & Swift languages</span> <br><br>
+                        </p>
+                    </div>
+                
+                    <button id="buton2" class="accordion center" onclick="mtFunction(2)">Professional Qualifications</button>
+                    <div class="panel center">
+                        <p>
+                            <strong> <u>Certifications and Accreditations:</u> </strong>  SMAW Welder  <br>
+                            <strong> <u>Computer Skills:</u> </strong> Microsoft Office, C++, Matlab, SolidWorks, AutoCad, ANSYS <br>
+                            <strong> <u>Languages:</u> </strong> Hebrew – Native Language. English – Excellent Reading\writing\speaking level
+                        </p>
+                    </div>
+
+                    <button id="buton3" class="accordion center" onclick="mtFunction(3)">Work Experience</button>
+                    <div class="panel center">
+                        <p>
+                            <strong> <u>Israeli Air Force Officer - Lieutenant:</u> </strong>  2005-2008 <br>
+                            Projects Manager, Construction Unit, Ramat David Air Base. Responsibilities include budget and technical managing core utilities projects in the fields of Air Conditioning, Jet Fuel supply and the Base Utility & Power grid. <br>
+                            <strong> <u>Israeli Air Force Officer - Captain:</u> </strong>  2008-2011 <br>
+                            Engine Officer, Propulsion Branch, IAF HQ. Responsibilities include the PT6-41\42\68 Jet Engines and the IO-550B Piston Engine. Job includes the mechanical design of new projects, publishing & surveying Engine Maintenance Procedures and drafting new contracts between the IAF and OEM (Original Equipment Manufacturer) world wide.<br>
+                            <strong> <u>YAHAV HAMIAS GROUP – CO2 Welder:</u> </strong>  2011-2012 <br>
+                            <strong> <u>TenZor – Mechanical Engineer:</u> </strong>  2012-2017 <br>
+                            Mechanical Engineer using computer simulation software analysis. <br>
+                        </p>
+                    </div>
+
+                    <button id="buton4" class="accordion center" onclick="mtFunction(4)">Contact Info</button>
+                    <div class="panel center">
+                        <p>
+                            <i class="fa fa-whatsapp"></i><span style="color:black;">&nbsp 053-2702445</span> <br>
+                            <i class="fa fa-envelope" aria-hidden="true"></i><span style="color:black;">&nbsp roeyhonig94@gmail.com</span> <br>
+                            <i class="fa fa-globe" aria-hidden="true"></i><span style="color:black;">&nbsp www.roeyhonig.com</span> <br>
+                        </p>
+                    </div>
+        </div>
+
+    </body>
+</html>

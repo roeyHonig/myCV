@@ -1,0 +1,47 @@
+#Desktop, #Mobile {
+    
+        display: none;
+    }
+
+    body {
+        position: relative;
+        opacity: 0;
+       
+    }
+    img{
+        width: 200px;
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+    }
+
+    .navbar {
+        justify-content: left;
+        font-size: 90px;
+    }
+    .navbar a {
+        font-size: inherit;
+    }
+
+    .material-icons{
+        font-size: inherit;
+    }
+
+    #fat, #fatBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: rgb(168, 161, 60);font-size: 20px;}
+    #mdo, #mdoBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: #51358a;font-size: 20px;}
+    #one, #oneBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: #bb8135;font-size: 20px;}
+    #two, #twoBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: #165812;font-size: 20px;}
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+
+    
+    
+    
+    
