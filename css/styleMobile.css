@@ -53,7 +53,7 @@ img{
      padding: 0 18px;
      max-height: 0px;
      overflow: hidden;
-     background-color: rgba(255, 192, 203, 0.7);
+     background-color: white; /* rgba(255, 192, 203, 0.7); */
      transition: max-height .4s ease-out;
  }
 
