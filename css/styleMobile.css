@@ -65,3 +65,12 @@ img{
     margin: auto;
     max-width: 95%;   
 }
+
+a:link { 
+    color: rgba(55, 123, 224, 1);
+    background-color: transparent; 
+    text-decoration: underline;
+}
+
+
+
