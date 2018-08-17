@@ -2,9 +2,18 @@
 var firstPress = true;
 var initialHeight;
 var numActive;
+
+$(document).ready(function(){
+    
+     console.log("Hello from mobile")
+     
+     
+ });
+
  function mtFunction(p) {
     var elmnt = document.getElementById("Mobile");    
      var panalElement = document.getElementsByClassName("panel");
+
     // retrives the initail height
      if (firstPress) initialHeight = $("#Mobile").height();
 
