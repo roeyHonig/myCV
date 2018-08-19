@@ -173,14 +173,15 @@ right:42.5%;
     height: 20%;
     text-align: left;
 }
+/*
 #education ul{
     
-    font-size: .3em;
+    font-size: inherit;
     color :  rgb(224, 213, 55);
     
     
 }
-
+*/
 #contactInfo h1{
     font-size: .4em;
     color : rgb(247, 26, 26);

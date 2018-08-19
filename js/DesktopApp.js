@@ -141,7 +141,13 @@
     function myFunction(divIdName,initFontSize) {
         var elmnt = document.getElementsByClassName(divIdName);
         for (i = 0; i < elmnt.length; i++) {
+
             elmnt[i].style.fontSize=initFontSize;
+            var listElement = elmnt[i].querySelectorAll(".unOrderedListAutoResizeText");
+            listElement.forEach(element => {
+                element.style.fontSize=initFontSize;
+            });
+
             var fontSize = elmnt[i].style.fontSize
             fontSize = parseInt(fontSize)
             fontSize = Number(fontSize)
@@ -154,6 +160,10 @@
             while (fontSize > 1 && contentOveride) {
                 fontSize -= 1;
                 elmnt[i].style.fontSize=fontSize+"px";
+                listElement.forEach(element => {
+                    element.style.fontSize=fontSize+"px";
+                });
+
                 if (elmnt[i].offsetHeight < elmnt[i].scrollHeight || elmnt[i].offsetWidth < elmnt[i].scrollWidth) {
                 contentOveride = true;
                  } else {
