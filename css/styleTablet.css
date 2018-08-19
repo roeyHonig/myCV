@@ -27,10 +27,10 @@
         font-size: inherit;
     }
 
-    #fat, #fatBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: rgb(168, 161, 60);font-size: 20px;}
-    #mdo, #mdoBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: #51358a;font-size: 20px;}
-    #one, #oneBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: #bb8135;font-size: 20px;}
-    #two, #twoBufferDiv {padding-top:69px;height:100px;color: #fff; background-color: #165812;font-size: 20px;}
+    #fat, #fatBufferDiv {padding-left:20px ;padding-right:20px ;padding-top:69px;height:100px;color: #fff; background-color: rgb(168, 161, 60);font-size: 20px;}
+    #mdo, #mdoBufferDiv {padding-left:20px ;padding-right:20px ;padding-top:69px;height:100px;color: #fff; background-color: #51358a;font-size: 20px;}
+    #one, #oneBufferDiv {padding-left:20px ;padding-right:20px ;padding-top:69px;height:100px;color: #fff; background-color: #bb8135;font-size: 20px;}
+    #two, #twoBufferDiv {padding-left:20px ;padding-right:20px ;padding-top:69px;height:100px;color: #fff; background-color: #165812;font-size: 20px;}
 
     a {
         color: white;
