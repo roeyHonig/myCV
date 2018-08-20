@@ -39,6 +39,7 @@
     var hobbiesHeight;
     var lineWidth = 3; 
     
+    
 
     $(document).ready(function(){
        
@@ -48,7 +49,7 @@
     });
 
     
-   
+    
 
     // cheack the width of the viewport and calls the function which draws the canvas
     function cheackWidth() {

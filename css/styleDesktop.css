@@ -173,15 +173,7 @@ right:42.5%;
     height: 20%;
     text-align: left;
 }
-/*
-#education ul{
-    
-    font-size: inherit;
-    color :  rgb(224, 213, 55);
-    
-    
-}
-*/
+
 #contactInfo h1{
     font-size: .4em;
     color : rgb(247, 26, 26);
@@ -309,7 +301,7 @@ i.fa-globe {
 }
 
 
-#workExperience i {
+#workExperience i.material-icons {
     width: 10%;
     font-size: 60px;
     color: orange;
@@ -361,4 +353,12 @@ i.fa-globe {
     height: 100%;
     color: rgb(17, 223, 61);
     display: inline-block;
+}
+
+/* override BS css*/
+.tooltip-inner {
+    text-align: left;
+    max-width: 650px;
+    /* If max-width does not work, try using width instead */
+    width: 650px; 
 }
